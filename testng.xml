@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite>
+<suite name="Suite">
+    <listeners>
+        <listener class-name="Listeners.MyListeners" />
+    </listeners>
+    <test name="TutorialsNinja Tests">
+        <classes>
+            <class name="CreateAccount"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
