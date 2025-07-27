@@ -4,9 +4,10 @@
     <listeners>
         <listener class-name="Listeners.MyListeners" />
     </listeners>
-    <test name="TutorialsNinja Tests">
+    <test name="My test cases">
         <classes>
-            <class name="CreateAccount"/>
+            <class name="Signin"/>
+
         </classes>
     </test> <!-- Test -->
 
