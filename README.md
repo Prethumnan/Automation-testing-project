@@ -37,7 +37,7 @@ It uses Java, Selenium WebDriver, TestNG, Maven, Jenkins, Docker, and AWS EC2 to
 
 ## 📁 Project Structure
 
-```bash
+
 Automation-testing-project/
 ├── .idea/                 # IDE-related files
 ├── ExtentReports/         # HTML test reports generated
@@ -74,7 +74,7 @@ On test failure, screenshots are saved in Screenshots/.
 
 Beautiful HTML reports generated using ExtentReports (ExtentReports/).
 
-##👨‍💻 Author
+## 👨‍💻 Author
 Prethumnan J
 📧 prethumnan77@gmail.com
 📍 Panruti, Tamil Nadu, India
