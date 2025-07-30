@@ -37,7 +37,7 @@ It uses Java, Selenium WebDriver, TestNG, Maven, Jenkins, Docker, and AWS EC2 to
 
 ## 📁 Project Structure
 
-
+```bash
 Automation-testing-project/
 ├── .idea/                 # IDE-related files
 ├── ExtentReports/         # HTML test reports generated
@@ -60,6 +60,8 @@ Automation-testing-project/
 ├── Dockerfile              # Docker container setup
 ├── pom.xml                 # Maven configuration
 └── testng.xml              # TestNG suite file
+
+```
 
 
 ## 🌐 CI/CD Integration
