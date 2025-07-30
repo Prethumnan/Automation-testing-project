@@ -62,14 +62,14 @@ Automation-testing-project/
 └── testng.xml              # TestNG suite file
 
 
-##🌐 CI/CD Integration
+## 🌐 CI/CD Integration
 Jenkins is configured with a GitHub webhook to trigger jobs automatically on code push.
 
 The automation suite runs inside a Docker container on an AWS EC2 instance.
 
 Execution reports are stored in the ExtentReports/ folder and archived via Jenkins.
 
-##📸 Reports and Screenshots
+## 📸 Reports and Screenshots
 On test failure, screenshots are saved in Screenshots/.
 
 Beautiful HTML reports generated using ExtentReports (ExtentReports/).
