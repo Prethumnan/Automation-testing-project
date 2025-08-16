@@ -57,6 +57,19 @@ public class Signin extends  Base{
         String msg= sign.getAuthenticationFailedMsg();
         Assert.assertEquals(msg,"Authentication failed.");
     }
+    //Here i am intentinally failing the test case
+   /* @Test
+    public void signinWithInvalidEmailAndInvalidPassword2_intentionalFail(){
+        sign.enterEmail(CommonUtilities.emailGenerator());
+        sign.enterPassword(testdata("wrongPassword"));
+        sign.clickSignin();
+        String msg= sign.getAuthenticationFailedMsg();
+        Assert.assertEquals(msg,"Authentication");*/
+    }
 
 
-}
+
+
+
+
+

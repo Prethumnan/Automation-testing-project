@@ -119,9 +119,9 @@ public class CreateAccount extends Base{
         if (newsletter.equals("Yes")){
             cap.clickSignUpforNewsletter();
         }
-        CommonUtilities.takeScreenShot(testID+"Before",driver);
+        //CommonUtilities.takeScreenShot(testID+"Before",driver);
         cap.clickRegister();
-        CommonUtilities.takeScreenShot(testID+"After",driver);
+        //CommonUtilities.takeScreenShot(testID+"After",driver);
 
     }
 

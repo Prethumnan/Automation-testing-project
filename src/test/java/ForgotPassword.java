@@ -34,6 +34,16 @@ public class ForgotPassword extends Base{
 
     }
 
+    // Here i am interntionally failing the test case
+    @Test
+    public void enterValidEmail2_interntionalFailure(){
+        fp.enterEmail(testdata("existingEmail"));
+        fp.clickRetrivePassword();
+        String actual = fp.getSuccessMsg();
+        String expected = "Wrong confirmation " + testdata("existingEmail");
+        Assert.assertEquals(actual, expected);
+    }
+
     @Test
     public void enterNoEmail(){
         fp.clickRetrivePassword();

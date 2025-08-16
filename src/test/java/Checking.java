@@ -1,14 +1,13 @@
 import Pages.CreateAccountPage;
 import Pages.HomePage;
 import Utilities.CommonUtilities;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -54,6 +53,11 @@ public class Checking extends Base{
         System.out.println(Arrays.deepToString(data));
 
 
+    }
+
+    public void screenshot(){
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
+        File sc = screenshot.getScreenshotAs(OutputType.FILE);
     }
 
     }
