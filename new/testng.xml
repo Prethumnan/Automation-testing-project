@@ -7,15 +7,10 @@
     <test name="My test cases">
         <classes>
 
-            <class name="ForgotPassword"/>
-
-    <!--
+                <class name="ForgotPassword"/>
                 <class name="Signin"/>
                 <class name="CreateAccount"/>
                  <class name="Search"/>
-
-
-                  -->
 
             </classes>
         </test> <!-- Test -->

@@ -41,7 +41,9 @@ public class MyListeners implements ITestListener {
         extentTest.log(Status.INFO,result.getThrowable());
         WebDriver driver= null;
         try {
-            driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+            driver = (WebDriver) result.getTestClass().getRealClass()
+                    .getField("driver")   // instead of getDeclaredField
+                    .get(result.getInstance());
         }catch (Throwable e){
             e.printStackTrace();
         }

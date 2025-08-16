@@ -16,7 +16,7 @@ public class Base {
 
     Properties prop;
     Properties testData;
-    WebDriver driver;
+    public WebDriver driver;
 
     public Base(){
         prop = new Properties();
