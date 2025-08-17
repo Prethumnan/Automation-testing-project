@@ -1,0 +1,72 @@
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+public class utitlities {
+
+    Actions actions;
+    WebDriver driver;
+    Alert alert;
+
+    public utitlities(WebDriver driver){
+        this.driver = driver;
+        actions = new Actions(driver);
+    }
+
+
+
+    //-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    public void scrollToElement(WebElement e){
+
+
+       actions.scrollToElement(e).build().perform();
+    }
+
+    public void dragAndDrop(WebElement source,WebElement destination){
+
+        actions.dragAndDrop(source,destination).build().perform();;
+    }
+    //-------------------------------------------------------------------------------------------------------------------------------------------
+
+    public Alert getAlert(){
+        return driver.switchTo().alert();
+    }
+
+    public void acceptAlert(){
+        getAlert().accept();
+    }
+
+    public void dismissAlert(){
+
+        getAlert().dismiss();
+    }
+
+    public String getTextFromAlert(){
+
+        getAlert().dismiss();
+    }
+
+    public void sentTextToAlert(String s){
+
+        getAlert().sendKeys(s);
+    }
+
+
+    //--------------------------------------------------------------------------------------------------------------------------------------------
+    public WebElement explicitWait(By by){
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement e = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        return e;
+    }
+
+
+}
